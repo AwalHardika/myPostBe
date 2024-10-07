@@ -18,7 +18,7 @@ model pengguna {
   nama            String
   email           String @unique
   password        String
-  posts           post[]
+  posts           post[] 
 }
 
 model post {
@@ -26,6 +26,6 @@ model post {
   judul           String
   body            String
   userId          Int
-  User            pengguna      @relation(fields: [userId], references: [id])
+  User            pengguna      @relation(fields: [userId], references: [id], onDelete: Cascade)
 
 }
