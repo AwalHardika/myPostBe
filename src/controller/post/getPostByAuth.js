@@ -1,7 +1,8 @@
 import db from "../../conn"
 
 const getPostByAuth = async (req, res) => {
-    const userId = req.userId
+    const 
+    userId = req.userId
     // const {id} = req.params
     // paramsId = parseInt(id)
     try {
